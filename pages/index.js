@@ -50,9 +50,17 @@ function HomePage() {
     }
   `;
 
+    const StyledBanner = styled.div`
+    background: url(${config.banner}) center;
+    background-size: cover;
+    min-height: 230px;
+    height: 25vw;
+    `;
+
   function Header(){
     return(
         <StyledHeader> 
+            <StyledBanner />
             {/*<img src="banner" />*/}
 
             <section className="user-info"> 
